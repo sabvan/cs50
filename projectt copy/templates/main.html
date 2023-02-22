@@ -1,0 +1,20 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    DIARY AND WELLNESS CHECK
+{% endblock %}
+
+{% block body %}
+    <img src="{{url_for('static', filename='topborder.jpg')}}" width=100% />
+
+    <img class="halfimage leftfloat" src="{{url_for('static', filename='reallyreading.jpg')}}" width="200"/>
+
+    <h1 class="cursive" style="margin-top:100px">MY PERSONAL DIARY</h1>
+    <h2 class="trebuchet">Welcome to your personal Diary and Wellness Check!</h2>
+    <h2 class="trebuchet">Here, you can keep track of how you're feeling everyday and what you did everyday.</h2>
+    <h2 class="trebuchet">Login or Register to get started!</h2>
+
+
+    <div class="border"> <a class="nav-link" href="/login"> LOGIN</a></div>
+    <div class="border"> <a class="nav-link" href="/register"> REGISTER</a></div>
+{% endblock %}

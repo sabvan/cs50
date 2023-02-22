@@ -1,0 +1,30 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    DIARY
+{% endblock %}
+
+{% block body %}
+    <h1 class="cursive">MY DIARY</h1>
+    {% for tablet in tablets %}
+        <div class="container" style="margin-top: 30px">
+            <img src="{{url_for('static', filename='diarybook.jpg')}}" width=75% />
+            <div class="diaryentry left staatliches" style="font-size: 50px;">Today's Entry</div>
+            <div class="left date satisfy">Date: {{ tablet["date"] }}</div>
+            <div class="left mentalpoints staatliches">Mental Points:  {{ tablet["mt"] }}</div>
+            <div class="left mentalinput satisfy">How I feel mentally:  {{ tablet["mti"] }}</div>
+            <div class="left socialpoints staatliches">Social Points:  {{ tablet["sc"] }}</div>
+            <div class="left sociallyinput satisfy">How my social interactions are:  {{ tablet["sci"] }}</div>
+            <div class="left physicalpoints staatliches">Physical Points:  {{ tablet["phy"] }}</div>
+            <div class="left physicalinput satisfy">How I feel physically:  {{ tablet["phyi"] }}</div>
+
+            <div class="right eatingpoints staatliches">Eating Points:  {{ tablet["ea"] }}</div>
+            <div class="right eatinginput satisfy">How I ate today:  {{ tablet["eati"] }}</div>
+            <div class="right anything staatliches">Random Thoughts:</div>
+            <div class="right anythinginput satisfy">{{ tablet["anyt"] }}</div>
+            <div class="right totalwell staatliches">Overall Wellness Points: {{ tablet["well"] }}</div>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}

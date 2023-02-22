@@ -1,0 +1,12 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    LOGIN
+{% endblock %}
+
+{% block body %}
+    <img class="fiximage" src="{{url_for('static', filename='fixhtml.jpg')}}"/>
+
+    <h1 class="cursive rightfloat" style="font-size: 60px; margin-right:280px;">UH OH!</h1>
+    <h2 class="trebuchet rightfloat fixmessage" >It seems something went wrong: {{ fix }}</h2>
+{% endblock %}

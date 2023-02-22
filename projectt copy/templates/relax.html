@@ -1,0 +1,22 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    RELAX
+{% endblock %}
+
+{% block body %}
+    <h2 class="cursive centertext">RECIPES</h2>
+    <img class="relaxpictures" src="{{url_for('static', filename='breadrecipe.jpg')}}" width="400" height="800"/>
+    <img class="relaxpictures" src="{{url_for('static', filename='saladrecipe.jpg')}}" width="600"/>
+    <img class="relaxpictures" src="{{url_for('static', filename='oatstick.jpg')}}" width="600"/>
+
+    <h2 class="cursive centertext">BREATHING EXERCISES</h2>
+    <img class="relaxpictures" src="{{url_for('static', filename='breathing1.jpg')}}" width="550"/>
+    <img class="relaxpictures" src="{{url_for('static', filename='breathing2.jpg')}}" width="420"/>
+
+    <h2 class="cursive centertext">EXERCISES</h2>
+    <img class="relaxpictures" src="{{url_for('static', filename='workout4.jpg')}}" width="600"/>
+    <img class="relaxpictures" src="{{url_for('static', filename='workout1.jpg')}}" width="350"/>
+    <img class="relaxpictures" src="{{url_for('static', filename='workout2.jpg')}}" width="350"/>
+
+{% endblock %}

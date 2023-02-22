@@ -1,0 +1,91 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    DAILY CHECK
+{% endblock %}
+
+{% block body %}
+    <h1 class="cursive" style="font-size:50px; margin-top:40px;">Write into your DIARY</h1>
+    <h2 class="trebuchet" style="font-size:30px; margin-top:10px;">On a scale from 1-5 (1-worst...5-best)</h2>
+    <form action="/dailycheck" method="post">
+        <table style="margin-left:335px;">
+            <tr>
+               <td class="staatliches"> How are you feeling mentally?<br></td>
+               <td><input type="radio" name="mentally" value=1>1<br></td>
+               <td><input type="radio" name="mentally" value=2 style="margin-left:10px;">2<br></td>
+               <td><input type="radio" name="mentally" value=3 style="margin-left:10px;">3<br></td>
+               <td><input type="radio" name="mentally" value=4 style="margin-left:10px;">4<br></td>
+               <td><input type="radio" name="mentally" value=5 style="margin-left:10px;">5<br></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" class="inputcheck" name="mentalinput" placeholder="Write about your feelings" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+               <td class="staatliches"> How have your social interactions today been?<br></td>
+               <td><input type="radio" name="socially" value=1>1<br></td>
+               <td><input type="radio" name="socially" value=2 style="margin-left:10px;">2<br></td>
+               <td><input type="radio" name="socially" value=3 style="margin-left:10px;">3<br></td>
+               <td><input type="radio" name="socially" value=4 style="margin-left:10px;">4<br></td>
+               <td><input type="radio" name="socially" value=5 style="margin-left:10px;">5<br></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="socialinput" placeholder="Tell us about your social interactions today" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+               <td class="staatliches"> How are you feeling physically?<br></td>
+               <td><input type="radio" name="physically" value=1>1<br></td>
+               <td><input type="radio" name="physically" value=2 style="margin-left:10px;">2<br></td>
+               <td><input type="radio" name="physically" value=3 style="margin-left:10px;">3<br></td>
+               <td><input type="radio" name="physically" value=4 style="margin-left:10px;">4<br></td>
+               <td><input type="radio" name="physically" value=5 style="margin-left:10px;">5<br></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="physicalinput" placeholder="Tell us what exercises or physical exertion you did today" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+               <td class="staatliches"> How well did you eat today?<br></td>
+               <td><input type="radio" name="eating" value=1>1<br></td>
+               <td><input type="radio" name="eating" value=2 style="margin-left:10px;">2<br></td>
+               <td><input type="radio" name="eating" value=3 style="margin-left:10px;">3<br></td>
+               <td><input type="radio" name="eating" value=4 style="margin-left:10px;">4<br></td>
+               <td><input type="radio" name="eating" value=5 style="margin-left:10px;">5<br></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="eatinginput" placeholder="Write what your ate or how you felt about what you ate" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="staatliches">Write your random thoughts</td>
+            </tr>
+            <tr>
+                <td >
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-control" name="anythinginput" placeholder="Write about anythings" type="text">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="dailychecksubmit">
+             <button class="btn btn-primary" type="sumbit">Submit</button>
+        </div>
+
+    </form>
+
+
+{% endblock %}
+

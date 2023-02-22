@@ -1,0 +1,40 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    REGISTER
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="cursive">REGISTER</h1>
+    <h2 class="trebuchet">Unlock the world of a diary all online!</h2>
+
+    <div class="login">
+        <form action="/register" method="post">
+            <div class="spacebelow">
+                <div class="form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                </div>
+            </div>
+            <div class="spacebelow">
+                <div class="form-group">
+                    <input class="form-control" name="password" placeholder="Password" type="password">
+                </div>
+            </div>
+            <div class="spacebelow">
+                <div class="form-group">
+                    <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+                </div>
+            </div>
+
+            <div class="submitlogin">
+                <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="staatliches centertext">"Give yourself the same care and attention.</div>
+    <div class="staatliches centertext">that you give to others</div>
+    <div class="staatliches centertext">and watch yourself bloom"</div>
+
+{% endblock %}

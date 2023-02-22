@@ -1,0 +1,26 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    ACCOUNT
+{% endblock %}
+
+{% block body %}
+    <h1 class="cursive">ACCOUNT INFO</h1>
+
+    <img class="fiximage" style="margin-bottom:50px;" src="{{url_for('static', filename='cataccount.jpg')}}"/>
+
+    <h1 class="cursive rightfloat" style="font-size: 30px; margin-right:310px;">USERNAME:</h1>
+    <h2 class="trebuchet rightfloat fixmessage" style="font-size: 20px;">{{username}}</h2>
+    <h1 class="cursive rightfloat" style="font-size: 30px; margin-right:300px;">DATE JOINED:<h1>
+    <h2 class="trebuchet rightfloat fixmessage" style="font-size: 20px;">{{joined}}</h2>
+    <h1 class="cursive rightfloat" style="font-size: 30px; margin-right:190px;">AVERAGE WELLNESS POINTS:</h1>
+    <h2 class="trebuchet rightfloat fixmessage" style="font-size: 20px;">{{avwellness}} points</h2>
+    <h1 class="cursive rightfloat" style="font-size: 30px; margin-right:240px;">NUMBER OF ENTRIES:</h1>
+    <h2 class="trebuchet rightfloat fixmessage" style="font-size: 20px;">{{counter}}</h2>
+    <!--
+    <div>{{ username }}</div>
+    <div>{{ joined }}</div>
+    <div>{{ avwellness }}</div>
+    <div>{{ counter }}</div>
+    -->
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "projectlayout.html" %}
+
+{% block title %}
+    LOGIN
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="cursive">LOGIN</h1>
+
+    <div class="login">
+        <form action="/login" method="post">
+            <div class="spacebelow">
+                <div class="form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                </div>
+            </div>
+            <div class="spacebelow">
+                <div class="form-group">
+                    <input class="form-control" name="password" placeholder="Password" type="password">
+                </div>
+            </div>
+            <div class="submitlogin">
+                <button class="btn btn-primary" type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="staatliches centertext">"If you want to be happy.</div>
+    <div class="staatliches centertext">Be."</div>
+    <div class="staatliches centertext">-Leo Tolstoy</div>
+{% endblock %}
